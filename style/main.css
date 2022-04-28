@@ -1,0 +1,505 @@
+@font-face {
+	font-family: BonoboBold;
+	src: url(../fonts/Bonobo/Bonobo-Bold.ttf);
+}
+@font-face {
+	font-family: BonoboRegular;
+	src: url(../fonts/Bonobo/Bonobo-Regular.ttf);
+}
+
+:root {
+    --primary-color: #3b4354;
+    --secondary-color: #9b9c9f;
+    --font-color: #d3bc8e;
+    --five-star: #ffb13f;
+    --four-star: #d28fd6;
+    --rarity-green: rgb(122, 178, 122);
+    --rarity-blue: rgb(151, 151, 223);
+}
+
+.green {
+    color: var(--rarity-green);
+}
+
+.red {
+    color: red;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+body {
+    /* background: var(--primary-color); */
+    background: var(--primary-color);
+    color: var(--font-color);
+}
+
+#home a {
+    font-family: BonoboBold;
+    margin-left: .3em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: var(--font-color);
+    display: block;
+}
+
+#home a:active, 
+#home a:hover, 
+#home a:link {
+    color: var(--font-color);
+}
+
+/* Header */
+header div.nav {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    display: inline-block;
+    border-radius: .6em;
+    background: #4e59709f;
+    text-align: center;
+}
+
+header div.nav img.menu {
+    transform: scale(1.2);
+    width: 2.75em;
+    padding-inline: 2.1em;
+    padding-block: .8em;
+    margin-bottom: 0;
+}
+
+header div.nav:active {
+    filter: opacity(.7);
+}
+
+header div.nav div.transparent {
+    display: none;
+}
+
+header div.nav div.untransparent {
+    display: inherit;
+}
+
+header div.nav div.transparent ul.navigator {
+    list-style-type: none;
+}
+
+header div.nav div.transparent ul.navigator li {
+    position: relative;
+    left: -1.35em;
+    top: -.50em;
+    padding: 0;
+    margin: 0px;
+    margin-top: .7em;
+}
+
+header div.nav div.transparent ul.navigator li a {
+    color: var(--font-color);
+    font-family: BonoboRegular;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+header div.nav div.transparent ul.navigator li a img.arrowUp {
+    margin-top: 0;
+    margin-inline: 0;
+    transform: rotate(90deg) scale(.5);
+}
+
+header div.nav div.transparent ul.navigator li a img.about {
+    margin-top: 0;
+    margin-inline: 0;
+    transform: scale(.6);
+}
+
+hr.headerMain{
+    border: .2px solid #9b9c9f;
+}
+
+hr {
+    border: .2px solid #9b9c9f;
+}
+
+/* Main */
+main div.recommendation h2 {
+    margin-left: .5em;
+}
+
+main div.recommendation div.hot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main div.recommendation div.rowOne {
+    display: flex;
+    flex-direction: row;
+}
+
+main div.recommendation div.hot div.fourStar img {
+    margin-left: 0.8em;
+    width: 5em;
+    background-image: url("../resource/rarity/bg_4star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+}
+
+main div.recommendation div.hot div.fiveStar img {
+    margin-left: 0.8em;
+    width: 5em;
+    background: url("../resource/rarity/bg_5star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+}
+
+main div.current-bp h2 {
+    margin-left: .5em;
+}
+
+main div.current-bp img {
+    width: 100%;
+}
+
+main div.character h2 {
+    margin-left: .5em;
+}
+
+main div.character p {
+    margin-left: .75em;
+}
+
+main div.character div.bg-character img {
+    margin-left: 0.8em;
+    width: 5em;
+        background-image: url("../resource/rarity/bg_4star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1em;
+    margin-bottom: .4em;
+    float: left;
+    margin-right: 2em;
+}
+
+main div.material h4{
+    margin-left: .75em;
+}
+
+main div.material div.material-book img.bookMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_2star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.bookName {
+    margin-left: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+main div.material div.material-weekly img.weeklyMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background: url("../resource/rarity/bg_5star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.weeklyName {
+    margin-left: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+main div.material div.material-acension img.acensionMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_1star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.asensionName {
+    margin-left: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+main div.material div.material-flower img.flowerMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_1star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.flowerName {
+    margin-left: 1em;
+    margin-top: 1.25em;
+    display: inline-block;
+}
+
+main div.material div.material-crown img.crownMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background: url("../resource/rarity/bg_5star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.crownName {
+    margin-left: 1em;
+    margin-top: 1.25em;
+    display: inline-block;
+}
+
+main div.material div.material-ascend img.ascendMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_4star.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.ascendName {
+    margin-left: 1em;
+    margin-top: 1.25em;
+    display: inline-block;
+}
+
+main div.material div.material-rock img.rockMaterial {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_3star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.material p.rockName {
+    margin-left: 1em;
+    margin-top: 2.50em;
+    display: inline-block;
+}
+
+main div.talent h4{
+    margin-left: .75em;
+}
+
+main div.talent div.normal-attack img {
+    width: 100px;
+}
+
+main div.talent div.burst img.burstSkill {
+    margin-left: -.5em;
+    border-radius: .4em;
+    float: left;
+    margin-bottom: 1em;
+}
+
+main div.talent p.burstName {
+    margin-left: .5em;
+    margin-top: -1em;
+    display: inline-block;
+}
+
+main div.talent div.burst p.desc {
+    margin-left: 6.25em;
+    margin-top: -.5em;
+}
+
+main div.talent div.skill img.firstSkill {
+    margin-left: -.5em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.talent div.skill p.desc {
+    margin-left: 6.25em;
+    margin-top: -.5em;
+}
+
+main div.talent p.skillName {
+    margin-left: .5em;
+    margin-top: -1em;
+    display: inline-block;
+}
+
+main div.talent div.normal-attack img.normalAttack {
+    margin-left: -.5em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.talent div.normal-attack p.desc {
+    margin-left: 6.25em;
+    margin-top: -.5em;
+}
+
+main div.talent p.normalName {
+    margin-left: .4em;
+    margin-top: -1em;
+    display: inline-block;
+}
+
+main div.artifact h4 {
+    margin-left: .75em;
+}
+
+main div.artifact div.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main div.artifact div.column div.row {
+    display: flex;
+    flex-direction: row;
+}
+
+main div.artifact div.firstArtifact img.noblesse {
+    width: 3em;
+    margin-left: .75em;
+    background-image: url("../resource/rarity/bg_3star.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .4em;
+    border-radius: .4em;
+    float: left;
+}
+
+main div.artifact p.oneArtifact {
+    margin-left: 1em;
+    margin-top: .1em;
+    display: inline-block;
+}
+
+.pyro {
+    color: rgb(255, 136, 0);
+}
+
+.pyroLogoText {
+    width: 1em;
+}
+
+.secondary-color {
+    color: white;
+}
+
+.bold {
+	font-family: BonoboBold;
+}
+
+.reg {
+	font-family: BonoboRegular;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* default */
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+input[type="text"], textarea, [contenteditable]
+{
+
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+@media screen and (min-width: 1000px) {
+
+    #home a {
+        font-size: 1.4em;
+        display: inline;
+        margin-top: .75em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    header div.nav img.menu {
+    transform: scale(.8);
+        width: 4.75em;
+        padding-inline: 1.2em;
+        padding-block: .2em;
+    }
+
+    main div.recommendation div.hot div.fourStar img {
+        background-color: var(--four-star);
+        border-radius: 1em;
+        width: 10em;
+    }
+
+    main div.recommendation div.hot div.fiveStar img {
+        background-color: var(--five-star);
+        border-radius: 1em;
+        width: 10em;
+    }
+
+    main div.recommendation div.hot div.fourStar:hover,
+    main div.recommendation div.hot div.fiveStar:hover {
+        filter: opacity(.5);
+    }
+
+    main div.current-bp img {
+        width: 50%;
+        margin-left: 1em;
+    }
+    
+}
